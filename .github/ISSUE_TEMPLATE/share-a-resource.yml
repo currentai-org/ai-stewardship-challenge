@@ -29,8 +29,8 @@ body:
       description: Which tracks does it inform?
       options:
         - label: "A: Portable contributor trust"
-        - label: "B: Onboarding ladder"
-        - label: "C: Governance of agents"
+        - label: "B: Onboarding and succession"
+        - label: "C: Agent governance"
   - type: textarea
     id: why
     attributes:
