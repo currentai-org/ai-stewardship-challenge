@@ -16,7 +16,7 @@ so we can agree on scope, hosting, and privacy first.
 
 ## 3. Open a pull request
 
-- **A source:** add it to [`BIBLIOGRAPHY.md`](BIBLIOGRAPHY.md) under the right heading, in the
+- **A source:** add it to the bibliography in [`research/README.md`](research/README.md) under the right heading, in the
   same format: authors (date), linked title, tracks, and evidence type.
 - **A dataset card:** copy [`datasets/_template/`](datasets/_template/) to
   `datasets/<dataset-name>/`, fill it in, and add the dataset to the catalog in

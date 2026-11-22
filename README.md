@@ -40,7 +40,7 @@ The challenge has three tracks. Sources and datasets are tagged with the tracks 
 
 ```
 .
-├── BIBLIOGRAPHY.md   118 papers, policies, standards, tools, and posts, tagged by track
+├── research/         Bibliography: 118 papers, policies, standards, tools, and posts
 ├── datasets/         The forge panel and 30 candidate datasets, with licenses and uses
 │   └── _template/        Card template for datasets we publish
 └── .github/          Issue and PR templates
