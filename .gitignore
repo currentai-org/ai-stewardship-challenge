@@ -1,0 +1,19 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+.env
+
+# Notebooks
+.ipynb_checkpoints/
+
+# Local data caches and scratch output (publish large data to Hugging Face instead)
+.cache/
+scratch/
+*.tmp
+
+# OS and editors
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/

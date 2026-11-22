@@ -1,0 +1,37 @@
+name: Propose a dataset
+description: Suggest data that challenge teams could build or evaluate against.
+title: "[Dataset] "
+labels: ["dataset"]
+body:
+  - type: textarea
+    id: what
+    attributes:
+      label: What the dataset would contain
+      description: Unit of observation (e.g. pull requests, contributors, projects), fields, and rough size.
+    validations:
+      required: true
+  - type: checkboxes
+    id: tracks
+    attributes:
+      label: Tracks
+      options:
+        - label: "A: Portable contributor trust"
+        - label: "B: Onboarding ladder"
+        - label: "C: Governance of agents"
+  - type: textarea
+    id: use
+    attributes:
+      label: How teams would use it
+      description: What could a team build, measure, or evaluate with it?
+    validations:
+      required: true
+  - type: textarea
+    id: sources
+    attributes:
+      label: Sources and terms
+      description: Where the data comes from, and any license or terms that apply.
+  - type: textarea
+    id: privacy
+    attributes:
+      label: Personal data
+      description: Does it describe identifiable people? How would that be handled?
