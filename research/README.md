@@ -76,7 +76,7 @@ issue.
 ## Datasets
 
 These are papers or projects whose main contribution is a dataset. The full list of candidate
-datasets, with licenses and evaluation uses, is in [`datasets/`](datasets/README.md).
+datasets, with licenses and evaluation uses, is in [`datasets/`](../datasets/README.md).
 
 - Li, Zhang, Hassan (2025-07-20). [The Rise of AI Teammates in SE 3.0 (AIDev dataset)](https://arxiv.org/abs/2507.15003). Tracks A, B, C · _measured_
 - Ogenrwot, Delgado Cervantes, Kim, Businge (2026-11-11). [GHAgentCI: A Dataset of Coding-Agent Invocations in CI Workflow Histories](https://arxiv.org/abs/2611.15522). Track C · _measured_
