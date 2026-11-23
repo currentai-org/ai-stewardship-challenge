@@ -4,11 +4,6 @@
 
 **Shared research and evaluation datasets for teams building in the AI Stewardship Challenge.**
 
-<p align="center">
-  <a href="LICENSE"><img src="https://img.shields.io/badge/license-MIT-blue.svg" alt="License: MIT"></a>
-  <img src="https://img.shields.io/badge/status-early%20scaffold-lightgrey" alt="Status: early scaffold">
-</p>
-
 </div>
 
 ---
