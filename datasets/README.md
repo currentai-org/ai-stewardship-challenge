@@ -7,7 +7,7 @@ Data that challenge teams can build and evaluate against. Two groups for now:
 2. **[Candidate datasets](#candidate-datasets)**: published third-party datasets the literature
    review found, with what each could be used to evaluate.
 
-This catalog is a snapshot of the `sovereigntech` workspace on Artio, taken 2026-11-22. Nothing
+This catalog is a snapshot of the `sovereigntech` workspace on Artio, taken 2026-11-23. Nothing
 here is hosted in the repo yet; datasets will move to Hugging Face as they are published, each
 with a card in this folder.
 
@@ -28,18 +28,18 @@ commit messages are stored, only derived flags.
 | `forge_index` | The GitHub panel, from the GitHub GraphQL API, with counts validated against GitHub's own totals | `repo_universe`, `items`, `item_activity`, `commits`, `contributor_repo`, `repo_week`, `repo_files_history`, `coverage` |
 | `forge_gitlab` | The GitLab counterpart, from the GitLab REST and GraphQL APIs | `gitlab_items`, `gitlab_item_activity`, `gitlab_commits`, `gitlab_members`, `gitlab_repo_snapshots` |
 | `forge_unified` | One cross-forge layer with the same columns and definitions for both forges | `repos`, `items`, `activity`, `commits`, `contributor_month`, `contributor_repo` |
-| `chaoss` | [CHAOSS](https://chaoss.community/) community health metrics computed the same way on both forges | `repo_month`, `repo_sustainability`, `newcomer_cohorts`, `forge_period`, `activity_hours`, `metric_catalog` |
+| `chaoss` | [CHAOSS](https://chaoss.community/) community health metrics computed the same way on both forges | `repo_month`, `repo_sustainability`, `newcomer_cohorts`, `forge_period`, `repo_period`, `activity_hours`, `metric_catalog` |
 | `evaluation_milestones` | First responsibility milestones per GitHub account and repository (first review, first label, first merge of someone else's work) | `contributor_milestones` |
 
-Size of `forge_unified` on 2026-11-22:
+Size of `forge_unified` on 2026-11-23:
 
 | Table | Rows | GitHub | GitLab |
 | --- | ---: | ---: | ---: |
 | `repos` | 137 | 117 | 20 |
-| `items` (issues and pull/merge requests) | 1,629,413 | 1,539,022 | 90,391 |
-| `activity` (comments, reviews, events) | 20,542,077 | 19,974,159 | 567,918 |
+| `items` (issues and pull/merge requests) | 1,630,411 | 1,540,020 | 90,391 |
+| `activity` (comments, reviews, events) | 20,553,203 | 19,985,285 | 567,918 |
 | `commits` (default branch) | 1,447,372 | 1,295,695 | 151,677 |
-| `contributor_repo` | 402,926 | 383,230 | 19,696 |
+| `contributor_repo` | 403,189 | 383,493 | 19,696 |
 
 **Known gaps:** GitLab maintainer flags rest on current membership, so former maintainers are
 missed; GitLab records no label, reopen, or ready-for-review events; activity beyond 430 nodes

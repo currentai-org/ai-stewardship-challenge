@@ -41,24 +41,54 @@ The challenge has three tracks. Sources and datasets are tagged with the tracks 
 └── .github/          Issue and PR templates
 ```
 
-Both are snapshots, taken 2026-11-22, of the challenge's discovery workspace on Artio, where the
-live versions live:
+Both are snapshots of the challenge's discovery workspace on Artio, where the live versions
+live. The bibliography was taken on 2026-11-22 and the dataset counts on 2026-11-23.
 
 - [Literature review](https://www.artio.so/sovereigntech/pages/literature-review): per-source
   summaries and lessons, and a synthesis per track
 - [GitHub and GitLab panels compared](https://www.artio.so/sovereigntech/pages/forge-comparison):
   the forge panel and its CHAOSS metrics
 
+## Bibliography
+
+[`research/`](research/README.md) lists 118 sources from the literature review, researched
+2026-11-15 from public sources:
+
+| Kind | Sources |
+| --- | ---: |
+| Papers | 44 |
+| Project and platform policies | 33 |
+| Standards and regulation | 14 |
+| Tools | 14 |
+| Posts and reports | 10 |
+| Datasets | 3 |
+| **Total** | **118** |
+
+Each entry is tagged with the tracks it informs and its evidence type: _measured_ (a number from
+data), _stated_ (a policy or claim) or _design-only_ (a specification or proposal).
+
 ## Datasets
 
 See [`datasets/`](datasets/README.md) for the full catalog. In short:
 
 - **The forge panel:** 137 repositories (117 GitHub, 20 GitLab) indexed from the forge APIs since
-  2023: 1.6M issues and pull/merge requests, 20.5M comments, reviews, and events, and 1.4M
-  commits, with CHAOSS metrics computed the same way on both forges. Accounts are numeric ids only.
+  2023 and refreshed daily, with CHAOSS metrics computed the same way on both forges. Accounts are
+  numeric ids only. Size on 2026-11-23:
+
+  | Table | Rows | GitHub | GitLab |
+  | --- | ---: | ---: | ---: |
+  | Issues and pull/merge requests | 1,630,411 | 1,540,020 | 90,391 |
+  | Comments, reviews, and events | 20,553,203 | 19,985,285 | 567,918 |
+  | Commits (default branch) | 1,447,372 | 1,295,695 | 151,677 |
+  | Contributor-repository pairs | 403,189 | 383,493 | 19,696 |
+
+- **Our datasets on Artio:** `forge_index` (GitHub), `forge_gitlab` (GitLab), `forge_unified`
+  (one cross-forge layer), `chaoss` (community health metrics per repository, month and quarter)
+  and `evaluation_milestones` (first responsibility milestones per contributor).
 - **Candidate datasets:** 30 published datasets the literature review found, from agent-authored
   PRs ([AIDev](https://huggingface.co/datasets/hao-li/AIDev)) to AI policy censuses and maintainer
-  role histories, each with its license and what it could evaluate.
+  role histories, each with its license and what it could evaluate. Three of them (two AI policy
+  datasets and a community catalog of AI contribution policies) are already loaded on Artio.
 
 Datasets we publish will go to Hugging Face, with a card in `datasets/`. Pin a version when you
 evaluate against one, so results stay comparable as it changes:
